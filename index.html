@@ -3,46 +3,61 @@
 <head>
 <style>
 
-body {
-  background-color: #00262F;
-font-family: "arial";
-color: #3FD093; 
-text-align: center;
-font-size: 18px;
+html, body {
+    height: 100%;
 }
+body {
+    margin: 0;
+    background-color: #ccffff;
 
+}
+/*
+
+div {
+    padding-top: 15%;
+}
+ .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 3px solid green;
+} */
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+       width: auto;
+    }
+.flex-item {
+
+}
 .center {
-  padding: 250px 0;
-  margin: auto;
-  width: 60%;
-  }
-
-tr.logo {
-  color: #3385D9;
-text-align: center;
-font-size: 150px;
-margin:0;
-  }
-
-tr {
-  margin:0;
-  }
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 </style>
 </head>
 
 <body>
 
-<div class="center">
+<div class="flex-container">
+    <div class="row">
+        <div class="flex-item">
+<img src="logo.png" alt="Logo" class="center"/>
 
-<table style="width:100%" align="center">
-<tr class="logo"><td>RTDK</td></tr>
-<tr><td>just a single page ...</td></tr>
-</table>
-
+</div>
+</div>
 </div>
 
 </body>
 
 </html>
-
